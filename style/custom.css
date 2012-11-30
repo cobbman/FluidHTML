@@ -1,0 +1,112 @@
+@import url(http://fonts.googleapis.com/css?family=Archivo+Black);
+/* =====================
+   Structure: All Sizes 
+   ===================== */
+html {
+  background: url("../img/low_contrast_linen.png") 0 0 #333333;
+  color: #eeeeee; }
+
+body#front-page {
+  margin: 0 auto;
+  text-align: center; }
+  body#front-page section ul {
+    padding: 0;
+    margin: 0 auto; }
+    body#front-page section ul li {
+      display: inline-block;
+      margin: 5px; }
+
+section header {
+  font-family: "Archivo Black", sans-serif; }
+
+/* ============================
+   MOBILE STRUCTURE: (smallest)     
+   ============================ */
+body#front-page section ul li p {
+  margin: 2px; }
+
+section ul li img {
+  width: 175px; }
+section ul li p {
+  width: 175px; }
+
+section#testimonials ul li {
+  margin-bottom: 15px; }
+section#testimonials img {
+  width: 20%;
+  float: left;
+  margin: 5px; }
+section#testimonials p {
+  width: 100%;
+  margin: 2px 5px 10px;
+  text-align: left; }
+  section#testimonials p span {
+    display: block;
+    text-align: right; }
+
+/* ========================================
+   Styles     
+   ======================================== */
+div.contact-bar {
+  clear: both;
+  width: 100%;
+  margin: 20px 0;
+  padding: 10px;
+  background: #2e2e2e; }
+
+header#main-header {
+  text-align: center; }
+  header#main-header h1 {
+    font-size: 3em;
+    margin: 50px 0;
+    font-family: "Archivo Black", sans-serif;
+    text-shadow: 2px 2px 10px #000; }
+    header#main-header h1 span {
+      font-size: .4em;
+      display: block;
+      margin-top: -15px; }
+
+section#showcase header {
+  display: none; }
+
+/* ==========================
+    INTERMEDIATE: 480px n up
+   ========================== */
+@media only screen and (min-width: 480px) {
+  section#showcase ul, section#services ul {
+    width: 480px; }
+    section#showcase ul li, section#services ul li {
+      margin: 0 5px; }
+      section#showcase ul li img, section#services ul li img {
+        width: 220px; }
+      section#showcase ul li p, section#services ul li p {
+        width: 220px; }
+
+  section#testimonials ul {
+    width: 460px; } }
+/* ====================
+    WIDE: 768px n up
+   ==================== */
+@media only screen and (min-width: 768px) {
+  section#testimonials ul {
+    width: 700px; }
+    section#testimonials ul li img {
+      width: 150px; } }
+/* ===================
+    MAXIMUM: 1140px
+   =================== */
+@media only screen and (min-width: 1140px) {
+  body#front-page {
+    width: 1100px; }
+
+  section#showcase ul, section#services ul {
+    width: 1140px; }
+    section#showcase ul li img, section#services ul li img {
+      width: auto; }
+
+  section#testimonials ul {
+    width: 920px; }
+    section#testimonials ul li {
+      width: 700px; }
+      section#testimonials ul li img {
+        width: 200px; } }

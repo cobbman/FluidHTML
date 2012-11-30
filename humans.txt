@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Bret Al-Amari
+    William -- front end developer -- @william_cobb
+
+# THANKS
+
+    H5BP.com team
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr

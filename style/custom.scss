@@ -1,0 +1,218 @@
+@import url(http://fonts.googleapis.com/css?family=Archivo+Black);
+
+// declare a few variables
+$bgcolor: #333;
+$text-color: #EEE;
+$header-font: 'Archivo Black', sans-serif;
+
+/* =====================
+   Structure: All Sizes 
+   ===================== */
+
+html {
+	background: url('../img/low_contrast_linen.png')  0 0 $bgcolor;
+	color: $text-color;
+}
+
+body#front-page {
+	margin: 0 auto;
+	text-align: center;
+
+	section ul {
+		padding: 0;
+		margin: 0 auto;
+	
+		li {
+			display: inline-block;
+			margin: 5px;
+		}
+	}
+}
+
+section header {
+	font-family: $header-font;
+}
+
+/* ============================
+   MOBILE STRUCTURE: (smallest)     
+   ============================ */
+
+body#front-page section ul li p {
+	margin: 2px;
+}
+
+section {
+	ul {
+		li {
+			img {
+				width: 175px;
+			}
+			p {
+				width: 175px;
+			}
+		}
+	}
+}
+
+section#testimonials {
+
+		ul li {
+			margin-bottom: 15px;
+		}
+		img {
+		width: 20%;
+		float: left;
+		margin: 5px;
+		}
+		p {
+			width: 100%;
+			margin: 2px 5px 10px;
+			text-align: left;
+
+			span {
+				display: block;
+				text-align: right;
+			}
+		}
+	}
+
+
+/* ========================================
+   Styles     
+   ======================================== */
+
+div.contact-bar {
+	clear: both;
+	width: 100%;
+	margin: 20px 0;
+	padding: 10px;
+	background: $bgcolor - 5;
+}
+
+
+
+header#main-header {
+	text-align: center;
+
+	h1 {
+		font-size: 3em;
+		margin: 50px 0;
+		font-family: $header-font;
+		text-shadow: 2px 2px 10px #000;
+
+		span {
+			font-size: .4em;
+			display: block;
+			margin-top: -15px;
+		}
+	}
+}
+
+section#showcase {
+	header {
+		display: none;
+	}
+}
+
+/* ==========================
+    INTERMEDIATE: 480px n up
+   ========================== */
+@media only screen and (min-width: 480px) { 
+
+	section#showcase, section#services {
+		
+		ul {
+			width: 480px;
+
+			li {
+				margin: 0 5px;
+
+				img {
+					width: 220px;
+				}
+				p {
+					width: 220px;
+				}
+			}
+
+		}
+	}
+
+	section#testimonials {
+		ul {
+			width: 460px;
+		}
+	}
+	
+}
+
+/* ====================
+    WIDE: 768px n up
+   ==================== */
+@media only screen and (min-width: 768px) {
+
+	section#testimonials {
+		ul {
+			width: 700px;
+
+			li {
+				img {
+					width: 150px;
+				}
+			}
+		}
+	}
+
+	section#showcase, section#services {
+		ul {
+			
+			li {
+				img {
+					
+				}
+
+			}
+		}
+	}
+
+}
+
+/* ===================
+    MAXIMUM: 1140px
+   =================== */
+@media only screen and (min-width: 1140px) {
+
+	body#front-page {
+		width: 1100px;
+	}
+
+	section#showcase, section#services {
+		ul {
+			width: 1140px;
+			
+			li {
+				img {
+					width: auto;
+				}
+
+			}
+		}
+	}
+
+	section#testimonials {
+		ul {
+			width: 920px;
+			
+			li {
+				width: 700px;
+
+				img {
+					width: 200px;
+				}
+			}
+		}
+	}
+
+}
+
+
